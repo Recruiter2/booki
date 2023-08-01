@@ -1,0 +1,542 @@
+/****** General ***********/
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --main-color: #0065FC;
+    --filter-bg-color: #DEEBFF;
+    --filter-gray: #D9D9D9;
+    --main-bg-color: #F2F2F2;
+}
+
+/*center placeholder of the input*/
+::placeholder {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    opacity: 1
+}
+
+/* or, for legacy browsers */
+
+::-webkit-input-placeholder {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+
+:-ms-input-placeholder {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+/*end of cneter placeholder of the input*/
+
+.fa-solid {
+    color: var(--main-color);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+/* section header */
+header {
+    height: 79px;
+    margin-bottom: 30px;
+}
+.logo_booki a img {
+    height: 19px;
+    width: 61.1px;
+
+}
+
+header .d-flex .logo_booki a img   {
+    margin-top: 50%;
+    margin-bottom: 50%;
+
+}
+
+
+
+.me-auto {
+    margin-right: auto ;
+}
+
+.d-flex {
+    display: flex ;
+    height: 79px;
+
+
+}
+
+a {
+    color: black;
+    text-decoration: none; /* no underline */
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+li, ul, nav, body  {
+    padding-top: 0px;
+    margin-top: 0px;
+    top: 0px;
+}
+.nav_buttons {
+    padding-top: 0px;
+    width:113px;
+    height:2px;
+    display: flex;
+    justify-content: space-around;
+}
+
+li .a_heb, li .a_act {
+    margin-top: 16px;
+}
+
+li .a_heb:hover, li .a_act:hover, li .a_heb:active, li .a_act:active {
+    color: #0065FC;
+}
+
+.nav_buttons:active, .nav_buttons:hover  {
+
+    background: #0065FC;
+}
+
+.btn-centered {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* end of header */
+
+.row_flex {
+    display: flex;
+    flex-direction: row;
+}
+
+#input_icon {
+    display: flex;
+    align-items: center;
+}
+
+p {
+    font-size: 16px;
+    margin-top: 0px;
+
+}
+
+.headline {
+    height: 53px;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+
+
+}
+
+.headline h2 {
+    height: 26px;
+    margin-bottom: 8px;
+}
+
+.headline p {
+    height: 19px;
+}
+
+
+.filters_buttons a {
+    margin-left: 10px;
+    padding: 0px 19px 0px 19px;
+    border-radius: 25px;
+    border: 2px solid var(--filter-gray);
+    gap: 10px;
+        max-height: 50px;
+    height: 50px;
+
+
+}
+
+.filters_buttons a:hover, .filters_buttons a:active {
+    color: #0065FC;
+    background: #0065FC;
+
+}
+
+.i_info p {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+}
+
+.search_bar button {
+    background: #0065FC;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0px 25px 25px 0px;
+    padding: auto 16px auto 16px;
+    width: 132px;
+    border: none;
+}
+
+.filtres, .filters_buttons {
+    height: 50px;
+    width: 758px;
+    display: flex !important;
+    justify-content: space-around !important;
+
+}
+.search_bar, .filtres, .i_info {
+    display: flex;
+
+}
+
+.filtres p {
+    font-size: 17px;
+    height: 20px;
+    margin-top:auto;
+    margin-bottom: auto;
+    font-weight: bold;
+
+}
+
+.filters_buttons, a {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.search_bar div {
+    max-height: 49px;
+    height: 49px;
+    width: 50px;
+    background: #F2F2F2;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_bar input, .search_bar button {
+    max-height: 49px;
+}
+
+.recherche_outils {
+    height: 281px;
+}
+
+.rechercher {
+    height: 281px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.i_info {
+    height: 24px;
+
+}
+#input_icon, .icon {
+    width: 22px;
+    height: 16px;
+
+    top: 7px;
+    left: 10px;
+
+}
+
+.i_info div #info_icon {
+    width: 4px;
+    height: 10px;
+
+    top: 7px;
+    left: 10px;
+
+}
+
+.i_info div {
+    width: 24px;
+    border: 1px solid #D9D9D9;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_bar > button >i {
+    color: white;
+    display: none;
+}
+
+
+
+
+
+
+
+/* suite section hebergment*/
+.section-title {
+    margin: 0;
+    font-size: 22px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.neutral-star {
+    color: var(--main-bg-color)
+}
+
+/****** Hebergements And Populaires ***********/
+.hebergements-and-populaires {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hebergements-and-populaires section {
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/****** Hebergements ***********/
+.hebergements {
+    width: 65%;
+}
+
+/****** Populaires ***********/
+.populaires {
+    width: 32%;
+}
+
+.populaires-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.populaires-cards .card {
+    display: flex;
+    margin-top: 33px;
+}
+
+.populaires-cards img {
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.populaires-cards .card-content {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.populaires-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.populaires-cards .card-subtitle {
+    margin: 0;
+}
+
+.populaires-cards .card-rating {
+    margin-bottom: 5px;
+}
+
+
+
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
+
+    .hebergements {
+        width: 100%;
+    }
+
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .populaires-cards .card {
+        width: 30%;
+    }
+
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+
+    .filtres {
+
+        display: flex !important;
+        flex-direction: column;
+
+    }
+
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+    header {
+        height: 115px;
+    }
+    header div {
+        flex-direction: column !important;
+        align-items: center !important;
+
+    }
+
+    header nav {
+        width: 100%;
+
+    }
+
+    .me-auto {
+
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .nav_buttons {
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    body, .main-container {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .nav_buttons {
+        padding-top: 0px;
+        width: 0px;
+        height: 0px;
+        display: flex;
+        justify-content: space-around;
+
+
+    }
+
+
+    li  {
+     height: 100% !important;
+
+
+        width:50% !important;
+
+    }
+    ul {
+     padding-left: 0px !important;
+
+    }
+
+    .nav_buttons:active, .nav_buttons:hover  {
+        border-bottom:2px solid #0065FC;
+        background: white;
+    }
+
+    /* end of header */
+
+    /*info group*/
+    .recherche_outils {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .headline h2 {
+        height: 52px;
+    }
+
+    .headline {
+        height: 79px;
+
+    }
+
+    .search_bar > button >i {
+        color: white;
+        display: block;
+    }
+
+    .search_bar > button >span{
+        display: none;
+    }
+
+
+
+
+}
