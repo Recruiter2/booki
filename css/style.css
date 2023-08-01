@@ -19,36 +19,36 @@
     opacity: 1
 }
 
-/* or, for legacy browsers */
+    /* or, for legacy browsers */
 
-::-webkit-input-placeholder {
-    text-align: center;
-    font-weight: bold;
-    font-size: 18px;
-    color: black;
-}
+    ::-webkit-input-placeholder {
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+        color: black;
+    }
 
-:-moz-placeholder { /* Firefox 18- */
-    text-align: center;
-    font-weight: bold;
-    font-size: 18px;
-    color: black;
-}
+    :-moz-placeholder { /* Firefox 18- */
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+        color: black;
+    }
 
-::-moz-placeholder {  /* Firefox 19+ */
-    text-align: center;
-    font-weight: bold;
-    font-size: 18px;
-    color: black;
-}
+    ::-moz-placeholder {  /* Firefox 19+ */
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+        color: black;
+    }
 
-:-ms-input-placeholder {
-    text-align: center;
-    font-weight: bold;
-    font-size: 18px;
-    color: black;
-}
-/*end of cneter placeholder of the input*/
+    :-ms-input-placeholder {
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+        color: black;
+    }
+/*end of center placeholder of the input*/
 
 .fa-solid {
     color: var(--main-color);
@@ -214,8 +214,8 @@ p {
 .filtres, .filters_buttons {
     height: 50px;
     width: 758px;
-    display: flex !important;
-    justify-content: space-around !important;
+    display: flex ;
+    justify-content: space-around ;
 
 }
 .search_bar, .filtres, .i_info {
@@ -442,7 +442,7 @@ p {
 
     .filtres {
 
-        display: flex !important;
+        display: flex ;
         flex-direction: column;
 
     }
@@ -456,8 +456,8 @@ p {
         height: 115px;
     }
     header div {
-        flex-direction: column !important;
-        align-items: center !important;
+        flex-direction: column ;
+        align-items: center ;
 
     }
 
@@ -474,8 +474,8 @@ p {
 
     .nav_buttons {
         display: flex;
-        justify-content: center !important;
-        align-items: center !important;
+        justify-content: center ;
+        align-items: center ;
     }
 
     body, .main-container {
@@ -495,14 +495,14 @@ p {
 
 
     li  {
-     height: 100% !important;
+     height: 100% ;
 
 
-        width:50% !important;
+        width:50% ;
 
     }
     ul {
-     padding-left: 0px !important;
+     padding-left: 0px ;
 
     }
 
