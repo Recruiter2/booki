@@ -68,21 +68,23 @@ body {
 
 /* section header */
 header {
-    height: 79px;
     margin-bottom: 30px;
+
 }
-.logo_booki a img {
+
+
+.logo_booki a img  {
     height: 19px;
     max-width: 61.1px;
-
-}
-
-header .d-flex .logo_booki a img   {
     margin-top: 50%;
     margin-bottom: 50%;
 
 }
 
+/* {*/
+/*    margin-top: 50%;*/
+/*    margin-bottom: 50%;*/
+/*}*/
 
 
 .me-auto {
@@ -182,7 +184,7 @@ p {
     border-radius: 25px;
     border: 2px solid var(--filter-gray);
     gap: 10px;
-        max-height: 50px;
+        max-height: 46px;
     height: 50px;
 
 
@@ -206,15 +208,13 @@ p {
     padding-top: 0px;
 }
 
-.filtres, .filters_buttons {
-    margin-bottom: 20px;
-    max-width: 758px;
-    display: flex ;
-    justify-content: space-around ;
 
-}
 .search_bar, .filtres, .i_info {
     display: flex;
+}
+
+.filtres h2{
+    font-size: 18px;
 }
 
 .filtres p {
@@ -226,12 +226,10 @@ p {
 
 }
 
-.filters_buttons, a {
-
+.filters_buttons, .filters_buttons > a {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
+
 }
 
 .search_bar > .icon_background {
@@ -282,17 +280,13 @@ p {
 
 
 
-
-
-.recherche_outils {
-    height: 281px;
-}
-
 .rechercher {
-    height: 281px;
+    min-height: 281px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-bottom: 35px;
+
 }
 
 .i_info {
@@ -368,6 +362,7 @@ p {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 35px;
 }
 
 .hebergements-and-populaires section {
@@ -479,7 +474,8 @@ p {
 @media (max-width: 767.98px) {
     /* end of header */
     header {
-        height: 115px;
+        min-height: 115px;
+        flex-direction: column;
     }
     header div {
         flex-direction: column ;
@@ -532,12 +528,21 @@ p {
 
     }
 
+
+
     /* end of header */
 
     /*info group*/
+    .rechercher {
+        min-height: 432px;
+        margin-bottom: 35px;
+    }
     .recherche_outils {
         padding-left: 20px;
         padding-right: 20px;
+        min-height: 432px;
+        margin-bottom: 35px;
+        padding-bottom: 0px;
     }
     .headline h2 {
         height: 52px;
@@ -557,6 +562,8 @@ p {
 
         border-bottom: 1px solid #F2F2F2;
         border-radius: 15px 15px 15px 15px;
+        /*margin-top: 50%;*/
+        margin-bottom: -2%;
     }
 
     .search_bar > input {
@@ -591,7 +598,51 @@ p {
 
     }
 
+    .filters_buttons, .filters_buttons > a {
+        max-width: 100%;
+        flex-wrap: wrap;
 
+    }
 
+    .filtres {
+        max-width: 100%;
+
+    }
+
+    .filtres p {
+        font-size: 14px;
+
+    }
+
+    .filters_buttons > a {
+        min-width: 35.9%;
+        margin-left: 0px;
+        padding: 0px;
+        max-height: 38px;
+        padding: 4px 19px 4px 19px;
+    }
+
+    .filters_buttons {
+        display: flex;
+        gap: 20px 10px;
+        justify-content: space-between;
+    }
+
+    /*section group hebergement et les plus populaires*/
+
+    .hebergements-and-populaires  .populaires {
+        order: 0;
+        margin-top: 24px;
+    }
+
+    .hebergements-and-populaires .hebergements {
+        order: 1;
+    }
+    .populaires-cards {
+        flex-direction: column;
+    }
+    .populaires-cards .card {
+        width: auto;
+    }
 
 }
