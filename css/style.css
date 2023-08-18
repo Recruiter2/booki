@@ -538,8 +538,8 @@ article a img {
     padding: 2%;
 }
 
-.act {
-    /*display: flex;*/
+.act .section-title{
+    margin-bottom: 4%;
 }
 .act-cards {
     display: flex;
